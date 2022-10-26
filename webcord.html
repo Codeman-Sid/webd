@@ -6,18 +6,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="webcord.css">
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <script src="/path/to/flickity.pkgd.min.js"></script>
     <title>Webcord</title>
 </head>
-<body class="bg-slate-700">
- <nav class="flex bg-slate-800 px-10 py-4 justify-between ">
-    <a href=""><span class=" text-white transition ease-in-out  items-start text-xl hover:text-red-700"><strong>Webcord</strong></span></a>
+<body class="bg-slate-800">
+ <nav class="flex bg-slate-900 px-10 py-4 justify-between ">
+    <a href=""><span class=" text-white transition ease-in-out  items-start text-xl hover:text-red-700 px"><strong>Webcord</strong></span></a>
+    <span class="flex justify-end">
+        <form action="">
+            <input class=" bg-slate-700  flex justify-end items-center p-1 w-80 rounded-xl text-slate-400"type="text" placeholder="🔎 Search" >
+        </form>
+    </span>
     <ul class=" flex space-x-3 justify-end">
         <li><a href=""><button class="cursor-pointer transition ease-in-out rounded-2xl text-white bg-red-700 px-2 py-1 hover:text-red-700 hover:bg-white active:bg-gray-400">➕Create Room</button></a></li>
         <li><a href="webcord.html"><button class="cursor-pointer rounded-2xl transition ease-in-out  text-white bg-red-700 px-2 py-1 hover:text-red-700 hover:bg-white active:bg-gray-400">Home</button></a></li>
         <li><a href=""><button class="cursor-pointer rounded-2xl text-white transition ease-in-out  bg-red-700 px-2 py-1 hover:text-red-700 hover:bg-white active:bg-gray-400">Login</button></a></li>
         <li><a href=""><button class="cursor-pointer rounded-2xl text-white transition ease-in-out  bg-red-700 px-2 py-1 hover:text-red-700 hover:bg-white active:bg-gray-400">Signup</button></a></li>
     </ul>
+    
  </nav>
-
+ <main>
+    <div class="carousel " data-flickity='{"wrapAround": true,"autoPlay":true}'>
+    <div class="carousel-cell">
+        <img class="thumb w-[700px] px-5 py-4 transition ease-in-out rounded-3xl max-w-[100%] h-auto delay-150 hover:-translate-y-1 hover:scale-110 hover:opacity-50 hover:" src="break.jpg" alt="">
+    </div>
+    <div class="carousel-cell">
+        <img class="thumb w-[700px] px-5 py-4 transition ease-in-out rounded-3xl max-w-[100%] h-auto delay-150 hover:-translate-y-1 hover:scale-110 hover:opacity-50" src="475264.jpg" alt="">
+    </div>
+    <div class="carousel-cell">
+        <img class="thumb w-[700px] px-5 py-4 transition ease-in-out rounded-3xl max-w-[100%] h-auto delay-150 hover:-translate-y-1 hover:scale-110 hover:opacity-50" src="820435.jpg" alt="">
+    </div>
+    <div class="carousel-cell">
+        <img class="thumb w-[700px] px-5 py-4 transition ease-in-out rounded-3xl max-w-[100%] h-auto delay-150 hover:-translate-y-1 hover:scale-110  hover:opacity-50" src="1051374.jpg" alt="">
+    </div>
+</div>
+ </main>
+ 
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+ <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 </body>
 </html>
