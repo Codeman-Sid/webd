@@ -1,0 +1,15 @@
+.flickity-page-dots .dot.is-selected {
+    opacity: .75;
+    background-color: red;
+}
+
+.flickity-page-dots .dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    opacity: 0.25;
+    cursor: pointer;
+    margin: 0px 8px;
+    background: darkred;
+    border-radius: 50%;
+}
